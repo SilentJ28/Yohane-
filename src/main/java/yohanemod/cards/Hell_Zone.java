@@ -66,7 +66,6 @@ public class Hell_Zone extends CustomCard{
                 info.applyPowers(p, mo);
                 AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, info));
             }
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FallenEnergy(p, 0), - p.getPower(FallenEnergy.POWER_ID).amount));
         }  else {
             AbstractDungeon.actionManager.addToBottom(new TalkAction(true, "I don't have enough Fallen Energy!", 1.0F, 2.0F));
         }
